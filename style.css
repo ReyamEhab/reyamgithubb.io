@@ -1,0 +1,407 @@
+body {
+  margin: auto; /* Center the body horizontally */
+  overflow: auto; /* Allow scrolling */
+  background: linear-gradient(315deg, #ffafcc 3%, pink 38%, #ea1466 68%, purple 98%); /* Gradient background */
+  animation: gradient 15s ease infinite; /* Animate gradient */
+  background-size: 400% 400%; /* Set background size */
+  background-attachment: fixed; /* Fix background to viewport */
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%; /* Start at top-left */
+  }
+  50% {
+      background-position: 100% 100%; /* Move to bottom-right */
+  }
+  100% {
+      background-position: 0% 0%; /* Return to top-left */
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%); /* White background with 25% opacity */
+  border-radius: 1000% 1000% 0 0; /* Create a rounded shape */
+  position: fixed; /* Fix position relative to viewport */
+  width: 200%; /* Set width to twice the viewport width */
+  height: 12em; /* Set height */
+  animation: wave 10s -3s linear infinite; /* Animate wave */
+  transform: translate3d(0, 0, 0); /* Set transform */
+  opacity: 0.8; /* Set opacity */
+  bottom: 0; /* Set bottom position */
+  left: 0; /* Set left position */
+  z-index: -1; /* Set z-index */
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em; /* Adjust bottom position for second wave */
+  animation: wave 18s linear reverse infinite; /* Animate second wave */
+  opacity: 0.8; /* Set opacity */
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em; /* Adjust bottom position for third wave */
+  animation: wave 20s -1s reverse infinite; /* Animate third wave */
+  opacity: 0.9; /* Set opacity */
+}
+@keyframes wave {
+  2% {
+      transform: translateX(1); /* Move wave slightly to the right */
+  }
+
+  25% {
+      transform: translateX(-25%); /* Move wave to the left */
+  }
+
+  50% {
+      transform: translateX(-50%); /* Move wave further to the left */
+  }
+
+  75% {
+      transform: translateX(-25%); /* Move wave back to the right */
+  }
+
+  100% {
+      transform: translateX(1); /* Return wave to original position */
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*Defines the gradient animation.
+0%: Starts the background position at the top-left.
+50%: Moves the background to the bottom-right.
+100%: Returns the background to the top-left*/
+
+a {
+  text-decoration: none;/*Removes the underline from all links*/
+}
+.header {
+  transition: all 0.2s linear; /* Smooth transition effect */
+  z-index: 1000; /* Set z-index */
+}
+
+.header .main-header {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items evenly */
+  padding: 1.5rem 8%; /* Add padding */
+  transition: all 0.2s linear; /* Smooth transition effect */
+}
+
+.header .main-header .logo {
+  font-size: 50px; /* Set font size */
+  color: white; /* Set text color */
+  margin-top: -50px; /* Adjust top margin */
+  margin-left: -140px; /* Adjust left margin */
+  font-family: "Dancing Script", cursive; /* Set font family */
+  padding-bottom: 40px; /* Add padding */
+  border-style: initial 30px; /* Set border style */
+   transition: all 0.2s linear; /* Smooth transition effect */
+}
+
+.header .menubar a {
+  font-family: "Dancing Script", cursive; /* Set font family */
+  color: white; /* Set text color */
+  margin-top: -90px; /* Adjust top margin */
+  display: inline-block; /* Display as inline block */
+  padding: 1.2rem; /* Add padding */
+  font-size: 30px; /* Set font size */
+  transition: all 0.2s linear; /* Smooth transition effect */
+ }
+
+.header .menubar a:hover {
+  color: #ff4d6d; /* Change text color on hover */
+  font-weight: bold; /* Set font weight on hover */
+}
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2") format("woff2"); /* Defines a custom font */
+  font-family: "Meta"; /* Specifies the font family */
+  font-style: normal; /* Specifies the font style */
+  font-weight: normal; /* Specifies the font weight */
+}
+
+main {
+  transition: all 0.5s; /* Smooth transition effect for all properties */
+  -webkit-text-stroke: 4px #d6f4f4; /* Adds a stroke effect to text */
+  font-variation-settings: "wght" 900, "ital" 1; /* Sets font variation settings */
+  font-size: 5rem; /* Sets the font size */
+  text-align: center; /* Centers the text */
+  color: transparent; /* Sets text color to transparent */
+  font-family: "Dancing Script", cursive; /* Specifies the font family */
+  text-shadow: 10px 10px 0px #07bccc, 15px 15px 0px #e601c0, 20px 20px 0px #e9019a, 25px 25px 0px #f40468, 45px 45px 10px #482896; /* Adds multiple text shadows */
+  cursor: pointer; /* Sets cursor style */
+}
+
+main:hover {
+  font-variation-settings: "wght" 80, "ital" 0; /* Changes font variation settings on hover */
+  text-shadow: none; /* Removes text shadow on hover */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap'); /* Imports fonts from Google Fonts */
+
+:root {
+  font-size: 5vmin; /* Sets the root font size */
+}
+
+#gfg {
+  color:  #ff4d6d; /* Sets text color */
+  background-color: white; /* Sets background color */
+  margin-top: 120px; /* Sets top margin */
+  font-size: 50px; /* Sets font size */
+  width: 100%; /* Sets width */
+  font-family: "Dancing Script", cursive; /* Specifies the font family */
+}
+
+.section1 {
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Aligns items horizontally in the center */
+  width: 1000px; /* Sets width */
+  height: 600px; /* Sets height */
+  margin-top: 100px; /* Sets top margin */
+  margin-left: 500px; /* Sets left margin */
+  border-radius: 10px; /* Sets border radius */
+  position: relative; /* Sets position */
+  overflow: hidden; /* Hides overflowing content */
+  transition: 0.6s ease-in-out; /* Smooth transition effect */
+  transform-style: preserve-3d; /* Preserves 3D transformations */
+  transform: translateZ(-20px); /* Translates in the Z-axis */
+}
+
+.section1:hover {
+  transform: translateZ(-50px) rotateX(10deg) rotateY(10deg); /* Transforms on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Adds box shadow on hover */
+}
+
+.section1::before {
+  content: ""; /* Adds content before element */
+  position: absolute; /* Sets position */
+  top: 0; /* Sets top position */
+  left: 0; /* Sets left position */
+  opacity: 0.8; /* Sets opacity */
+  transform: translateZ(-1px); /* Translates in the Z-axis */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.section1:hover::before {
+  opacity: 0; /* Changes opacity on hover */
+}
+
+.section1 h3 {
+  font-family: "Dancing Script", cursive; /* Specifies the font family */
+  padding: 20px;
+  display: flex;
+  color: white; /* Sets text color */
+  text-align: center; /* Centers text */
+   font-size: 1.1rem; /* Sets font size */
+  transform: translateZ(30px); /* Translates in the Z-axis */
+}
+
+.bounce {
+  font-size: 5rem;
+  width: 100%;
+  margin-top: 20px; /* Adjust margin-top as needed */
+  display: inline-flex;
+  justify-content: center;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, white);
+}
+
+.bounce span {
+  font-family: "Dancing Script", cursive; /* Specifies the font family */
+  display: inline-block;
+  color: linear-gradient(to right, white, , white, pink); /* Sets background gradient */
+  padding-bottom: -150px;
+  font-size: 200px;
+  animation: bounce 1s infinite;
+}
+Photography Avenue
+/* Define individual glow animations for each span */
+.bounce span:nth-child(0) {
+animation: glow 1s alternate infinite 0.0s; /* Delay each letter */
+}
+.bounce span:nth-child(1) {
+  animation: glow 1s alternate infinite 0.5s; /* Delay each letter */
+}
+.bounce span:nth-child(2) {
+  animation: glow 1s alternate infinite 0.10s; /* Delay each letter */
+}
+.bounce span:nth-child(3) {
+  animation: glow 1s alternate infinite 0.15s; /* Delay each letter */
+}
+.bounce span:nth-child(4) {
+animation: glow 1s alternate infinite 0.20s; /* Delay each letter */
+}
+.bounce span:nth-child(5) {
+animation: glow 1s alternate infinite 0.25s; /* Delay each letter */
+}
+.bounce span:nth-child(6) {
+animation: glow 1s alternate infinite 0.30s; /* Delay each letter */
+}
+.bounce span:nth-child(7) {
+animation: glow 1s alternate infinite 0.35s; /* Delay each letter */
+}
+.bounce span:nth-child(8) {
+animation: glow 1s alternate infinite 0.40s; /* Delay each letter */
+}
+.bounce span:nth-child(9) {
+animation: glow 1s alternate infinite 0.45s; /* Delay each letter */
+}
+.bounce span:nth-child(10) {
+animation: glow 1s alternate infinite 0.50s; /* Delay each letter */
+}
+.bounce span:nth-child(11) {
+animation: glow 1s alternate infinite 0.55s; /* Delay each letter */
+}
+.bounce span:nth-child(12) {
+animation: glow 1s alternate infinite 0.60s; /* Delay each letter */
+}
+.bounce span:nth-child(13) {
+animation: glow 1s alternate infinite 0.65s; /* Delay each letter */
+}
+.bounce span:nth-child(14) {
+animation: glow 1s alternate infinite 0.70s; /* Delay each letter */
+}
+.bounce span:nth-child(15) {
+animation: glow 1s alternate infinite 0.75s; /* Delay each letter */
+}
+.bounce span:nth-child(16) {
+animation: glow 1s alternate infinite 0.80s; /* Delay each letter */
+}
+.bounce span:nth-child(17) {
+animation: glow 1s alternate infinite 0.85s; /* Delay each letter */
+}
+.bounce span:nth-child(18) {
+animation: glow 1s alternate infinite 0.90s; /* Delay each letter */
+}
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 0px white;
+  }
+  100% {
+      text-shadow: 0 0 5px  #e601c0, 0 0 30px #e9019a, 0 0 40px #482896;
+  }
+}
+
+.wrapper.ten {
+  margin-top: 170px; /* Adjust margin-top as needed */
+}
+
+.polar{
+  background:white; /* Set background color to white */
+  padding:1rem; /* Add padding */
+  box-shadow: 0 0.2rem 0.5rem gray; /* Apply box shadow */
+  font-family: "Dancing Script", cursive; /* Specifies the font family */
+  
+}
+.polar img{
+  max-width:100%; /* Set maximum width to 100% */
+  height:auto; /* Set height to auto */
+  
+}
+.container{
+  margin-left:35px; /* Set left margin */
+  margin-top:120px; /* Set top margin */
+}
+.caption{
+ font-size:1rem; /* Set font size */
+  text-align:center; /* Center align text */
+  line-height:1.5em; /* Set line height */
+}
+.contents{
+  width:30%; /* Set width */
+  display:inline-block; /* Display as inline block */
+  margin-top:2rem; /* Set top margin */
+  filter:grayscale(100%); /* Apply grayscale filter */
+  
+}
+.contents .polar:before{
+  content:''; /* Add empty content */
+  position:absolute; /* Set position to absolute */
+  z-index:-1; /* Set z-index */
+  transtion:all 0.30s; /* Add transition effect */
+  
+}
+
+div.one{ transform: rotate(10deg);} /* Rotate div one by 10 degrees */
+div.two{
+   transform: rotate(-10deg); /* Rotate div two by -10 degrees */
+}
+div.three{
+   transform: rotate(10deg); /* Rotate div three by 10 degrees */
+}
+.contents:hover{
+  filter:grayscale(0%); /* Remove grayscale filter on hover */
+   transform: rotate(0); /* Reset rotation */
+  -ms-transform: scale(1.2);  /* Scale on Microsoft browsers */
+  -webkit-transform: scale(1.2); /* Scale on WebKit browsers */
+  transform: scale(1.2);  /* Scale */
+}
+ 
+
+
+.footer{
+  padding:30px 0px; /* Add padding */
+  text-align:center; /* Center align text */
+  margin-top: 40px; /* Set top margin */
+  background-color: white;
+  }
+  
+  .footer .row{
+  width:100%; /* Set width to 100% */
+  padding:0.6% 0%; /* Add padding */
+  color:black; /* Set text color */
+  font-family: Alex Brush; /* Set font family */
+  font-size: 1.5em; /* Set font size */
+  }
+  
+  .footer .row a{
+  text-decoration:none; /* Remove underline from links */
+  color:black; /* Set text color */
+  transition:0.5s; /* Add transition effect */
+  }
+  
+  .footer .row a:hover{
+  color:#ff4d6d /* Change text color on hover */
+  }
+  
+  .footer .row ul{
+  width:100%; /* Set width to 100% */
+  }
+  
+  .footer .row ul li{
+  display:inline-block; /* Display as inline block */
+   }
+  
+  .footer .row a i{
+  font-size: 2em; /* Set font size */
+  margin:0% 1%; /* Set margins */
+  }
+  
+  @media (max-width:220px){ /* Media query for maximum width of 220px */
+  .footer{
+  text-align:left; /* Left align text */
+  padding:5%; /* Add padding */
+  }
+  .footer .row ul li{
+  display:block; /* Display as block */
+   text-align:left; /* Left align text */
+  }
+}

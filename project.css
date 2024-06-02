@@ -1,0 +1,598 @@
+/* Set background color, margin, and padding for the body */
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+
+
+/* Header styling */
+.header {
+  transition: all 0.2s linear;
+  z-index: 1000;
+  font-size: 35px;
+}
+.header .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 8%;
+  transition: all 0.2s linear;
+}
+.header .main-header .logo {
+  font-size: 70px;
+  color: black;
+  padding: 25px;
+  margin-top: -50px;
+  margin-left: -170px;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 40px;
+  border-style: initial 30px;
+  font-weight: bolder;
+  transition: all 0.2s linear;
+}
+.header .menubar a {
+  font-family: "Dancing Script", cursive;
+  color: black;
+  margin-top: -50px;
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 35px;
+  transition: all 0.2s linear;
+  letter-spacing: 0.1em; /* Add space between the letters */
+}
+.header .menubar a:hover {
+  color: #e73c7e;
+  font-weight: bold;
+}
+
+/* Styling for section with class 'page1' */
+.section .page1 {
+  /* Set position to relative */
+  position: relative;
+  /* Set width and height to 100% */
+  width: 100%;
+  height: 100%;
+  /* Ensure image doesn't overflow its container */
+  overflow: hidden;
+  /* Add transition effect for smoother change */
+  transition: filter 0.3s ease;
+}
+
+/* Hover effect for images in 'page1' section */
+.section .page1:hover img {
+  /* Change filter to grayscale on hover */
+  filter: grayscale(100%);
+}
+
+/* Styling for images in 'page1' section */
+.section .page1 img {
+  /* Set width and height to cover the entire container */
+  width: 100vw;
+  height: 100vh;
+  /* Ensure images maintain aspect ratio */
+  object-fit: cover;
+}
+
+/* Styling for project section */
+.project {
+  /* Set position to absolute */
+  position: absolute;
+  /* Adjust margin from top */
+  margin-top: -750px;
+  /* Adjust left position */
+  left: 25%;
+  /* Transform to center */
+  transform: translate(-50%, -50%);
+  /* Center align text */
+  text-align: center;
+  /* Set text color */
+  color: #fff;
+  /* Increase font weight for better visibility */
+  font-weight: bold;
+}
+
+/* Styling for project section heading */
+.project h1 {
+  /* Specify font family */
+  font-family: "Sevillana", cursive;
+  /* Set font size */
+  font-size: 3rem;
+  /* Add margin below heading */
+  margin-bottom: 1rem;
+  /* Add border radius */
+  border-radius: 8px;
+}
+
+/* Styling for project section paragraph */
+.project p {
+  /* Specify font family */
+  font-family: "Dancing Script", cursive;
+  /* Set font size */
+  font-size: 2.5rem;
+  /* Add border radius */
+  border-radius: 8px;
+}
+
+/* Styling for zaha section */
+.zaha {
+  /* Set position to absolute */
+  position: absolute;
+  /* Adjust left position */
+  left: 20%;
+  /* Ensure z-index */
+  z-index: 1;
+}
+
+/* Styling for zaha image */
+.zaha img {
+  /* Adjust image size */
+  width: 200px;
+  /* Maintain aspect ratio */
+  height: auto;
+  /* Adjust margin from top */
+  margin-top: -950px;
+  /* Make image round */
+  border-radius: 50%;
+  /* Add smooth transition effect */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for zaha image */
+.zaha img:hover {
+  /* Scale up the image on hover */
+  transform: scale(1.1);
+}
+
+/* Styling for container */
+.container {
+  /* Set width to 100% */
+  width: 100%;
+  /* Set height as needed */
+  height: 100px;
+  /* Set position to relative */
+  position: relative;
+}
+
+/* Styling for moving bar */
+.moving-bar {
+  /* Adjust margin from top */
+  margin-top: 40px;
+  /* Adjust width as needed */
+  width: 2500px;
+  /* Set height to 100% */
+  height: 100%;
+  /* Set background color */
+  background-color: #B5C18E;
+  /* Set position to absolute */
+  position: absolute;
+  /* Apply animation */
+  animation: moveBar 5s linear infinite;
+  /* Align items in the center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Set text color */
+  color: white;
+  /* Set font size */
+  font-size: 18px;
+}
+
+/* Styling for text */
+.text {
+  /* Set position to relative */
+  position: relative;
+  /* Set z-index */
+  z-index: 1;
+  /* Set font size */
+  font-size: 40px;
+  /* Specify font family */
+  font-family: "Dancing Script", cursive;
+}
+
+/* Keyframes for moving bar animation */
+@keyframes moveBar {
+  0% {
+    left: 0;
+  }
+  100% {
+    /* Move the bar to the end of the container */
+    left: calc(100% - 200px);
+  }
+}
+
+/* Styling for element with id 'gfg' */
+#gfg {
+  /* Set text color */
+  color: #B5C18E;
+  /* Set background color */
+  background-color: white;
+  /* Set font size */
+  font-size: 50px;
+  /* Set width to 100% */
+  width: 100%;
+  /* Specify font family */
+  font-family: "Dancing Script", cursive;
+}
+
+/* Styling for section2 */
+.section2 {
+  /* Adjust margin from top */
+  margin-top: -20px;
+  /* Set background color */
+  background-color: #B5C18E;
+}
+
+ 
+
+/* Styling for images in section2 */
+.section2 img {
+  /* Set image width */
+  width: 550px;
+  /* Set image height */
+  height: 650px;
+  /* Add padding around the image */
+  padding: 50px;
+  /* Float the image to the right */
+  float: right;
+  /* Add margin to the right */
+  margin-right: 100px;
+}
+
+/* Styling for paragraph in section2 */
+.section2 p {
+  /* Specify font family */
+  font-family: "Sevillana", cursive;
+  /* Set font size */
+  font-size: 30px;
+  /* Set text color */
+  color: #fff;
+  /* Add margin to the left */
+  margin-left: 90px;
+  /* Add padding at the bottom */
+  padding-bottom: 50px;
+}
+
+/* Padding for wrapper element */
+.wrap {
+  /* Add padding at the bottom */
+  padding-bottom: 50px;
+}
+
+/* Image Gallery */
+.card {
+  /* Display flex with wrap */
+  display: flex;
+  flex-wrap: wrap;
+  /* Set width */
+  width: 550px;
+  /* Set height */
+  height: 650px;
+  /* Set gap between items */
+  gap: 60px;
+}
+
+/* Styling for each item in the image gallery */
+.card__item {
+  /* Set position to relative */
+  position: relative;
+  /* Set max-width */
+  max-width: calc(33.33% - 40px);
+  /* Set width to 100% */
+  width: 100%;
+  /* Set height */
+  height: 500px;
+  /* Remove default list style */
+  list-style: none;
+  /* Hide overflow */
+  overflow: hidden;
+  /* Change cursor on hover */
+  cursor: pointer;
+}
+
+/* Styling for images in the image gallery */
+.card__img {
+  /* Display as block */
+  display: block;
+  /* Set width */
+  width: 100%;
+  /* Set height */
+  height: 100%;
+  /* Ensure image covers the container */
+  object-fit: cover;
+  /* Specify transform property */
+  will-change: transform;
+  /* Add transition effect */
+  transition: .8s var(--cubicbz);
+}
+
+/* Hover effect for images in the image gallery */
+.card__item:hover .card__img {
+  /* Scale up the image on hover */
+  transform: scale(1.3);
+}
+
+/* Pseudo-element for overlay */
+.card__item::after {
+  /* Set position to absolute */
+  position: absolute;
+  /* Add content */
+  content: '';
+  /* Set width to cover the container */
+  width: 100%;
+  /* Set height to cover the container */
+  height: 100%;
+  /* Set top to 0 */
+  top: 0;
+  /* Set left to 0 */
+  left: 0;
+  /* Set initial opacity to 0 */
+  opacity: 0;
+  /* Apply backdrop filter */
+  backdrop-filter: blur(20px);
+  /* Set background color with transparency */
+  background: rgba(0, 0, 0, 0.614);
+  /* Specify transform property */
+  will-change: opacity;
+  /* Disable pointer events */
+  pointer-events: none;
+  /* Set z-index */
+  z-index: 2;
+  /* Add transition effect */
+  transition: .8s var(--cubicbz);
+}
+
+/* Hover effect for overlay */
+.card__item:hover::after {
+  /* Change opacity on hover */
+  opacity: 1;
+}
+
+/* Text style for zoom effect */
+.zoom {
+  /* Display as block */
+  display: block;
+  /* Set top position */
+  top: 10%;
+  /* Set left position */
+  left: 10%;
+  /* Set font size */
+  font-size: 40px;
+  /* Convert text to uppercase */
+  text-transform: uppercase;
+  /* Specify transform and opacity properties */
+  will-change: transform, opacity;
+  /* Disable pointer events */
+  pointer-events: none;
+  /* Initial transform */
+  transform: translate(-50%, -10%);
+  /* Set text color as transparent */
+  color: transparent;
+  /* Add text stroke */
+  -webkit-text-stroke: 1px var(--pr-color);
+  /* Set z-index */
+  z-index: 3;
+  /* Add transition effect */
+  transition: .8s var(--cubicbz);
+}
+
+/* Hover effect for zoom text */
+.card__item:hover .zoom {
+  /* Change opacity on hover */
+  opacity: 1;
+  /* Apply transform on hover */
+  transform: translate(-50%, -50%);
+}
+
+/* Styling for section3 */
+.section3 {
+  /* Set background color */
+  background-color: black;
+}
+
+/* Styling for images in section3 */
+.section3 img {
+  /* Set image width */
+  width: 450px;
+  /* Set image height */
+  height: 650px;
+  /* Add padding around the image */
+  padding: 50px;
+  /* Float the image to the right */
+  float: right;
+  /* Add margin to the right */
+  margin-right: 100px;
+}
+
+/* Styling for glowing text */
+.glow {
+  /* Set font size */
+  font-size: 60px;
+  /* Specify font family */
+  font-family: "Dancing Script", cursive;
+  /* Set text color */
+  color: #fff;
+  /* Add padding at the top */
+  padding-top: 15px;
+  /* Align text to the left */
+  text-align: left;
+  /* Add margin to the left */
+  margin-left: 90px;
+  /* Apply glow animation */
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Keyframes for glow animation */
+@-webkit-keyframes glow {
+  from {
+    /* Set initial text shadow */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0A6847, 0 0 40px #0A6847, 0 0 50px #0A6847, 0 0 60px #0A6847, 0 0 70px #0A6847;
+  }
+  to {
+    /* Set final text shadow */
+    text-shadow: 0 0 20px #fff, 0 0 30px #0A6847, 0 0 40px #75A47F, 0 0 50px #0A6847, 0 0 60px #0A6847, 0 0 70px #0A6847, 0 0 80px #0A6847;
+  }
+}
+
+/* Styling for paragraph in section3 */
+.section3 p {
+  /* Specify font family */
+  font-family: "Sevillana", cursive;
+  /* Set font size */
+  font-size: 30px;
+  /* Set text color */
+  color: #fff;
+  /* Add margin to the left */
+  margin-left: 90px;
+}
+
+/* Image Gallery */
+.card {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+height: auto;
+gap: 60px;
+}
+
+.card__item {
+position: relative;
+max-width: calc(33.33% - 40px);
+width: 100%;
+height: 500px;
+list-style: none;
+overflow: hidden;
+cursor: pointer;
+}
+
+.card__img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+will-change: transform;
+transition: .8s var(--cubicbz);
+}
+
+.card__item:hover .card__img {
+transform: scale(1.3);
+}
+
+.card__item::after {
+position: absolute;
+content: '';
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+backdrop-filter: blur(20px);
+background: rgba(0, 0, 0, 0.614);
+will-change: opacity;
+pointer-events: none;
+z-index: 2;
+transition: .8s var(--cubicbz);
+}
+
+.card__item:hover::after {
+opacity: 1;
+}
+
+/* text style */
+.zoom {
+display: block;
+ top: 10%;
+left: 10%;
+ font-size: 40px;
+text-transform: uppercase;
+will-change: transform, opacity;
+pointer-events: none;
+transform: translate(-50%, -10%);
+color: transparent;
+-webkit-text-stroke: 1px var(--pr-color);
+z-index: 3;
+transition: .8s var(--cubicbz);
+}
+
+.card__item:hover .zoom {
+opacity: 1;
+transform: translate(-50%, -50%);
+}
+ 
+
+/* Footer Styling */
+.footer {
+    /* Text alignment */
+  text-align: center;
+  /* Top margin */
+   background-color: black;
+ }
+
+/* Footer Row Styling */
+.footer .row {
+  /* Width */
+  width: 100%;
+  /* Padding */
+  padding: 0.6% 0%;
+  /* Text color */
+  color: white;
+  /* Font family */
+  font-family: Alex Brush;
+  /* Font size */
+  font-size: 1.5em;
+}
+
+/* Footer Anchor Styling */
+.footer .row a {
+  /* Text decoration */
+  text-decoration: none;
+  /* Text color */
+  color: white;
+  /* Transition effect */
+  transition: 0.5s;
+}
+
+/* Footer Anchor Hover Styling */
+.footer .row a:hover {
+  /* Text color on hover */
+  color: #B5C18E ;
+}
+
+/* Footer Row UL Styling */
+.footer .row ul {
+  /* Width */
+  width: 100%;
+}
+
+/* Footer Row UL List Styling */
+.footer .row ul li {
+  /* Display as inline-block */
+  display: inline-block;
+}
+
+/* Footer Anchor Icon Styling */
+.footer .row a i {
+  /* Font size */
+  font-size: 2em;
+  /* Margin */
+  margin: 0% 1%;
+}
+
+/* Media Query for Footer */
+@media (max-width: 220px) {
+  /* Footer alignment */
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  /* Footer UL List alignment */
+  .footer .row ul li {
+    display: block;
+    text-align: left;
+  }
+}

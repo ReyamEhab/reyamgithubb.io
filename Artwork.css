@@ -1,0 +1,432 @@
+/* Ensure html and body elements take up the full height of the viewport */
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure the body and html take the full height */
+}
+
+/* Style the body element */
+body {
+  background-image: url('img/background.jpg'); /* Set background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-size: cover; /* Ensure background image covers the entire viewport */
+}
+
+/* Style anchor (a) elements */
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* HEADER (Logo/Navbar) */
+/* Style the header class */
+.header {
+  transition: all 0.2s linear; /* Smooth transition for all properties */
+  z-index: 1000; /* Ensure header appears above other elements */
+  font-size: 35px; /* Set font size */
+}
+
+/* Style the main-header within the header */
+.header .main-header {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items evenly */
+  padding: 1.5rem 8%; /* Set padding */
+  transition: all 0.2s linear; /* Smooth transition */
+}
+
+/* Style the logo within the main-header */
+.header .main-header .logo {
+  font-size: 70px; /* Set font size */
+  color: black; /* Set font color */
+  padding: 25px; /* Set padding */
+  margin-top: -50px; /* Adjust top margin */
+  margin-left: -170px; /* Adjust left margin */
+  font-family: "Dancing Script", cursive; /* Set font family */
+  padding-bottom: 40px; /* Set bottom padding */
+  border-style: initial 30px; /* Set border style */
+  font-weight: bolder; /* Set font weight */
+  transition: all 0.2s linear; /* Smooth transition */
+}
+
+/* Style anchor (a) elements within the menubar in the header */
+.header .menubar a {
+  font-family: "Dancing Script", cursive; /* Set font family */
+  color: black; /* Set font color */
+  margin-top: -50px; /* Adjust top margin */
+  display: inline-block; /* Display as inline block */
+  padding: 1.2rem; /* Set padding */
+  font-size: 35px; /* Set font size */
+  transition: all 0.2s linear; /* Smooth transition */
+  letter-spacing: 0.1em; /* Add space between the letters */
+}
+
+/* Style anchor (a) elements within the menubar in the header on hover */
+.header .menubar a:hover {
+  color: #ff4d6d; /* Change color on hover */
+  font-weight: bold; /* Change font weight on hover */
+}
+
+/* Style h2 elements within the artwork class */
+.artwork h2 {
+  text-align: center; /* Center text */
+  font-size: 100px; /* Set font size */
+  margin-top: 20px; /* Set top margin */
+  font-weight: bold; /* Set font weight */
+  font-family: 'Gambetta', serif; /* Set font family */
+  color: #ff4d6d; /* Set font color */
+  background-color: black; /* Set background color */
+  border-radius: 5px #ff4d6d; /* Set border radius */
+}
+
+/* Style h1 elements within the artwork class */
+.artwork h1 {
+  font-size: 120px; /* Set font size */
+  background-color: #ff4d6d; /* Set background color */
+  display: inline-block; /* Display as inline block */
+  margin-left: 820px; /* Set left margin */
+  letter-spacing: 5px; /* Add space between letters */
+  font-weight: bolder; /* Set font weight */
+  font-family: 'Gambetta', serif; /* Set font family */
+}
+
+/* Style the bounce class */
+.bounce {
+  font-size: 5rem; /* Set font size */
+  width: 100%; /* Set width to 100% */
+  margin-top: 1300px; /* Set top margin */
+  display: inline-flex; /* Use inline-flex layout */
+  justify-content: center; /* Center content */
+  -webkit-box-reflect: below -20px linear-gradient(transparent, white); /* Create reflection */
+}
+
+/* Style span elements within the bounce class */
+.bounce span {
+  font-family: "Dancing Script", cursive; /* Set font family */
+  display: inline-block; /* Display as inline block */
+  padding-bottom: 50px; /* Set bottom padding */
+  color: #f76f88; /* Set font color */
+  font-size: 200px; /* Set font size */
+  animation: bounce 1s infinite; /* Apply bounce animation */
+}
+
+/* Define individual glow animations for each span element within the bounce class */
+.bounce span:nth-child(0) {
+  animation: glow 1s alternate infinite 0.0s; /* Delay each letter */
+}
+.bounce span:nth-child(1) {
+  animation: glow 1s alternate infinite 0.5s; /* Delay each letter */
+}
+.bounce span:nth-child(2) {
+  animation: glow 1s alternate infinite 0.10s; /* Delay each letter */
+}
+.bounce span:nth-child(3) {
+  animation: glow 1s alternate infinite 0.15s; /* Delay each letter */
+}
+.bounce span:nth-child(4) {
+  animation: glow 1s alternate infinite 0.20s; /* Delay each letter */
+}
+.bounce span:nth-child(5) {
+  animation: glow 1s alternate infinite 0.25s; /* Delay each letter */
+}
+.bounce span:nth-child(6) {
+  animation: glow 1s alternate infinite 0.30s; /* Delay each letter */
+}
+.bounce span:nth-child(7) {
+  animation: glow 1s alternate infinite 0.35s; /* Delay each letter */
+}
+.bounce span:nth-child(8) {
+  animation: glow 1s alternate infinite 0.40s; /* Delay each letter */
+}
+.bounce span:nth-child(9) {
+  animation: glow 1s alternate infinite 0.45s; /* Delay each letter */
+}
+.bounce span:nth-child(10) {
+  animation: glow 1s alternate infinite 0.50s; /* Delay each letter */
+}
+.bounce span:nth-child(11) {
+  animation: glow 1s alternate infinite 0.55s; /* Delay each letter */
+}
+.bounce span:nth-child(12) {
+  animation: glow 1s alternate infinite 0.60s; /* Delay each letter */
+}
+.bounce span:nth-child(13) {
+  animation: glow 1s alternate infinite 0.65s; /* Delay each letter */
+}
+.bounce span:nth-child(14) {
+  animation: glow 1s alternate infinite 0.70s; /* Delay each letter */
+}
+.bounce span:nth-child(15) {
+  animation: glow 1s alternate infinite 0.75s; /* Delay each letter */
+}
+.bounce span:nth-child(16) {
+  animation: glow 1s alternate infinite 0.80s; /* Delay each letter */
+}
+.bounce span:nth-child(17) {
+  animation: glow 1s alternate infinite 0.85s; /* Delay each letter */
+}
+.bounce span:nth-child(18) {
+  animation: glow 1s alternate infinite 0.90s; /* Delay each letter */
+}
+
+/* Define keyframes for bounce animation */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0); /* Start and end at original position */
+  }
+  50% {
+      transform: translateY(-20px); /* Move up */
+  }
+}
+
+/* Define keyframes for glow animation */
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 0px white; /* No shadow at start */
+  }
+  100% {
+      text-shadow: 0 0 5px  #e601c0, 0 0 30px #e9019a, 0 0 40px #482896; /* Apply glowing shadow */
+  }
+}
+
+/* Style img elements */
+img {
+  --s: 15px;  /* Size of the frame */
+  --b: 2px;   /* Border thickness */
+  --w: 500px; /* Width of the image */
+  --c: #f76f88; /* Frame color */
+  margin-top: 200px; /* Top margin */
+  margin-left: 70px; /* Left margin */
+  width: var(--w); /* Set width using variable */
+  aspect-ratio: 1; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container */
+  padding: calc(2*var(--s)); /* Set padding */
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0; /* Gradient settings */
+  background:
+    linear-gradient(var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat; /* Set background gradient */
+  outline: calc(var(--w)/2) solid #0009; /* Set outline */
+  outline-offset: calc(var(--w)/-2 - 2*var(--s)); /* Set outline offset */
+  transition: .4s; /* Set transition */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Style img elements on hover */
+img:hover {
+  outline: var(--b) solid var(--c); /* Change outline color */
+  outline-offset: calc(var(--s)/-2); /* Adjust outline offset */
+  --_i: calc(100% - 2*var(--s)); /* Adjust background size */
+}
+
+/* Style the bounce1 class */
+.bounce1 {
+  width: 100%; /* Set width to 100% */
+  margin-top: 100px; /* Set top margin */
+  display: inline-flex; /* Use inline-flex layout */
+  justify-content: center; /* Center content */
+  -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e); /* Create reflection */
+}
+
+/* Style span elements within the bounce1 class */
+.bounce1 span {
+  display: inline-block; /* Display as inline block */
+  font-size: 200px; /* Set font size */
+  animation: bounce 1s infinite; /* Apply bounce animation */
+}
+
+/* Define individual glow animations for each span element within the bounce1 class */
+.bounce1 span:nth-child(0) {
+  animation: glow 1s alternate infinite 0.0s; /* Delay each letter */
+}
+.bounce1 span:nth-child(1) {
+  animation: glow 1s alternate infinite 0.5s; /* Delay each letter */
+}
+.bounce1 span:nth-child(2) {
+  animation: glow 1s alternate infinite 0.10s; /* Delay each letter */
+}
+.bounce1 span:nth-child(3) {
+  animation: glow 1s alternate infinite 0.15s; /* Delay each letter */
+}
+.bounce1 span:nth-child(4) {
+  animation: glow 1s alternate infinite 0.20s; /* Delay each letter */
+}
+.bounce1 span:nth-child(5) {
+  animation: glow 1s alternate infinite 0.25s; /* Delay each letter */
+}
+.bounce1 span:nth-child(6) {
+  animation: glow 1s alternate infinite 0.30s; /* Delay each letter */
+}
+.bounce1 span:nth-child(7) {
+  animation: glow 1s alternate infinite 0.35s; /* Delay each letter */
+}
+.bounce1 span:nth-child(8) {
+  animation: glow 1s alternate infinite 0.35s; /* Delay each letter */
+}
+.bounce1 span:nth-child(9) {
+  animation: glow 1s alternate infinite 0.35s; /* Delay each letter */
+}
+
+/* Define keyframes for bounce1 animation */
+@keyframes bounce1 {
+  0%, 100% {
+      transform: translateY(0); /* Start and end at original position */
+  }
+  50% {
+      transform: translateY(-20px); /* Move up */
+  }
+}
+
+/* Define keyframes for glow animation */
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 0px black; /* No shadow at start */
+  }
+  100% {
+      text-shadow: 0 0 5px black, 0 0 30px black, 0 0 40px black; /* Apply glowing shadow */
+  }
+}
+
+/* Style h1 elements */
+h1 {
+  font-size: 70px; /* Set font size */
+  margin-left: 700px; /* Set left margin */
+}
+
+/* Style the bounce1 class */
+.bounce1 {
+  width: 100%; /* Set width to 100% */
+  display: inline-flex; /* Use inline-flex layout */
+  justify-content: center; /* Center content */
+  -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e); /* Create reflection */
+}
+
+/* Style span elements within the bounce2 class */
+.bounce1 span {
+  display: inline-block; /* Display as inline block */
+  font-size: 200px; /* Set font size */
+  animation: bounce 1s infinite; /* Apply bounce animation */
+}
+
+/* Define individual glow animations for each span element within the bounce2 class */
+.bounce1 span:nth-child(0) {
+  animation: glow 1s alternate infinite 0.0s; /* Delay each letter */
+}
+.bounce1 span:nth-child(1) {
+  animation: glow 1s alternate infinite 0.5s; /* Delay each letter */
+}
+.bounce1 span:nth-child(2) {
+  animation: glow 1s alternate infinite 0.10s; /* Delay each letter */
+}
+.bounce1 span:nth-child(3) {
+  animation: glow 1s alternate infinite 0.15s; /* Delay each letter */
+}
+.bounce1 span:nth-child(4) {
+  animation: glow 1s alternate infinite 0.20s; /* Delay each letter */
+}
+ 
+
+/* Define keyframes for bounce2 animation */
+@keyframes bounce2 {
+  0%, 100% {
+      transform: translateY(0); /* Start and end at original position */
+  }
+  50% {
+      transform: translateY(-20px); /* Move up */
+  }
+}
+
+/* Define keyframes for glow animation */
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 0px black; /* No shadow at start */
+  }
+  100% {
+      text-shadow: 0 0 5px black, 0 0 30px black, 0 0 40px black; /* Apply glowing shadow */
+  }
+}
+
+/* Style h1 elements within the about class */
+.about h1 {
+  padding: 20px; /* Set padding */
+  margin-left: 500px; /* Set left margin */
+}
+
+/* Style the image1 id */
+#image1 {
+  width: auto; /* Set width to auto */
+  height: auto; /* Set height to auto */
+  margin-left: -20px; /* Set left margin */
+}
+
+/* Style the gfg id */
+#gfg {
+  color:  white; /* Set text color */
+  background-color: #ff4d6d; /* Set background color */
+  margin-top: 120px; /* Set top margin */
+  font-size: 50px; /* Set font size */
+  width: 100%; /* Set width to 100% */
+  font-family: "Dancing Script", cursive; /* Set font family */
+}
+
+/* Footer Styling */
+/* Style the footer class */
+.footer {
+  padding: 30px 0px; /* Set padding */
+  text-align: center; /* Center text */
+  margin-top: 40px; /* Set top margin */
+}
+
+/* Footer Row Styling */
+/* Style the row class within the footer */
+.footer .row {
+  width: 100%; /* Set width to 100% */
+  padding: 0.6% 0%; /* Set padding */
+  color: black; /* Set text color */
+  font-family: Alex Brush; /* Set font family */
+  font-size: 1.5em; /* Set font size */
+}
+
+/* Footer Anchor Styling */
+/* Style anchor (a) elements within the row in the footer */
+.footer .row a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set text color */
+  transition: 0.5s; /* Set transition */
+}
+
+/* Footer Anchor Hover Styling */
+/* Style anchor (a) elements within the row in the footer on hover */
+.footer .row a:hover {
+  color: #ff4d6d; /* Change text color on hover */
+}
+
+/* Footer Row UL Styling */
+/* Style ul elements within the row in the footer */
+.footer .row ul {
+  width: 100%; /* Set width to 100% */
+}
+
+/* Footer Row UL List Styling */
+/* Style li elements within ul in the row in the footer */
+.footer .row ul li {
+  display: inline-block; /* Display as inline block */
+}
+
+/* Footer Anchor Icon Styling */
+/* Style i elements within anchor (a) in the row in the footer */
+.footer .row a i {
+  font-size: 2em; /* Set font size */
+  margin: 0% 1%; /* Set margin */
+}
+
+/* Media Query for Footer */
+/* Adjust footer styling for screens with a max width of 220px */
+@media (max-width: 220px) {
+  .footer {
+    text-align: left; /* Align text to the left */
+    padding: 5%; /* Set padding */
+  }
+  .footer .row ul li {
+    display: block; /* Display as block */
+    text-align: left; /* Align text to the left */
+  }
+}

@@ -1,0 +1,280 @@
+  
+/* Background styling for the page */
+body {
+  /* A colorful gradient background */
+  background: linear-gradient(-45deg,#ffafcc 3%, pink 38%, #ea1466 68%, purple 98%);
+  /* Make the background repeat smoothly */
+  background-size: 400% 400%;
+  /* Animate the background gradient over 15 seconds with infinite looping */
+  animation: gradient 15s ease infinite;
+}
+
+/* Keyframes animation for the background gradient */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; /* Start position of the gradient */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle position of the gradient */
+  }
+  100% {
+    background-position: 0% 50%; /* End position of the gradient */
+  }
+}
+
+/* General styles for links */
+a {
+  text-decoration: none;
+}
+
+/* Header styling */
+.header {
+  transition: all 0.2s linear;
+  z-index: 1000;
+  font-size: 35px;
+}
+.header .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 8%;
+  transition: all 0.2s linear;
+}
+.header .main-header .logo {
+  font-size: 70px;
+  color: white;
+  padding: 25px;
+  margin-top: -50px;
+  margin-left: -170px;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 40px;
+  border-style: initial 30px;
+  font-weight: bolder;
+  transition: all 0.2s linear;
+}
+.header .menubar a {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  margin-top: -50px;
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 35px;
+  transition: all 0.2s linear;
+  letter-spacing: 0.1em; /* Add space between the letters */
+}
+.header .menubar a:hover {
+  color: #e73c7e;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 15rem;
+	    text-align: center;
+      height:90vh;
+      line-height: 70vh;
+	    color: #ffe1b8;
+      font-family: "Dancing Script", cursive;
+	    font-weight: 700;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #c11a2b, 
+                  35px 35px 0px #c11a2b, 
+                  40px 40px 0px #c11a2b, 
+                  45px 45px 0px #c11a2b;
+}  
+
+
+/* Styles for web development section */
+.webdevelopment {
+  width: 1800px;
+  height: 1000px;
+  display: flex;
+  box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+  transition: box-shadow 1s;
+  margin-top: 30px;
+  margin-left: -500px;
+}
+
+/* Styles for content after the web development section */
+.webdevelopment::after {
+  width: 1800px;
+  height: 1000px;
+  display: block;
+  white-space: pre;
+  font: 15pt 'sigmar one';
+  color: white;
+  border: 10px dashed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s .5s;
+  background-color: #ff4d6d;
+  opacity: 0.8;
+  background-size: 25px 25px;
+}
+
+/* Reveal image on hover */
+.webdevelopment:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+/* Hide text on hover */
+.webdevelopment:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+/* Styles for individual sections */
+#petrol {
+  background-image: url(img/petrol.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ff4d6d;
+}
+#petrol::after {
+  content: 'Petrol Calculator';
+  color: black;
+  font-weight: bolder;
+  font-size: 70px;
+  font-family: "Dancing Script", cursive;
+}
+
+#htmlguide {
+  background-image: url(img/htmlguide.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+#htmlguide::after {
+  content: 'Html Guide';
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  font-size: 90px;
+  font-family: "Dancing Script", cursive;
+}
+
+#filter {
+  background-image: url(img/italy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ff4d6d;
+}
+#filter::after {
+  content: 'Filter';
+  background-color: #ff4d6d;
+  color: black;
+  font-weight: bolder;
+  font-size: 70px;
+  font-family: "Dancing Script", cursive;
+}
+
+#one-page-website {
+  background-image: url(img/movie.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+#one-page-website::after {
+  content: 'One-Page-Website';
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  font-size: 70px;
+  font-family: "Dancing Script", cursive;
+}
+
+#rgbgame {
+  background-image: url(img/rgb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+#rgbgame::after {
+  content: 'RGB Game';
+  background-color: #ff4d6d;
+  color: black;
+  font-weight: bolder;
+  font-size: 70px;
+  font-family: "Dancing Script", cursive;
+}
+
+#studyplanner{
+  background-image: url(img/studypanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+#studyplanner::after {
+  content: 'RGB Game';
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  font-size: 70px;
+  font-family: "Dancing Script", cursive;
+}
+/* Wrapper for sections */
+#wrapper {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+}
+
+/* Marquee styles */
+#gfg {
+  color: #ff4d6d;
+  background-color: white;
+  margin-top: 5400px;
+  font-size: 50px;
+  width: 100%;
+  font-family: "Dancing Script", cursive;
+}
+
+/* Footer styles */
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer .row {
+  width: 100%;
+  padding: 0.6% 0;
+  color: black;
+  font-family: Alex Brush;
+  font-size: 1.5em;
+}
+.footer .row a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+.footer .row a:hover {
+  color: #ff4d6d;
+}
+.footer .row ul {
+  width: 100%;
+}
+.footer .row ul li {
+  display: inline-block;
+}
+.footer .row a i {
+  font-size: 2em;
+  margin: 0 1%;
+}
+
+/* Media query for small screens */
+@media (max-width: 220px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    text-align: left;
+  }
+}

@@ -1,0 +1,670 @@
+ 
+/* Background styling for the page */
+body {
+  /* A colorful gradient background */
+  background: linear-gradient(-45deg,#ffafcc 3%, pink 38%, #ea1466 68%, purple 98%);
+  /* Make the background repeat smoothly */
+  background-size: 400% 400%;
+  /* Animate the background gradient over 15 seconds with infinite looping */
+  animation: gradient 15s ease infinite;
+}
+
+/* Keyframes animation for the background gradient */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; /* Start position of the gradient */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle position of the gradient */
+  }
+  100% {
+    background-position: 0% 50%; /* End position of the gradient */
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* HEADER (Logo/Navbar) */
+.header {
+  /* Smooth transition effect for all properties */
+  transition: all 0.2s linear;
+  /* Font size for elements with class 'header' */
+  font-size: 30px;
+}
+
+/* Main header section */
+.header .main-header {
+  /* Display as a flex container */
+  display: flex;
+  /* Align items vertically in the center */
+  align-items: center;
+  /* Distribute items evenly along the main axis */
+  justify-content: space-between;
+  /* Padding for the main header */
+  padding: 1.5rem 8%;
+  /* Smooth transition effect for all properties */
+  transition: all 0.2s linear;
+  /* Adjust the position slightly */
+  margin-top: -5px;
+}
+
+/* Logo */
+.header .main-header .logo {
+  /* Font size for the logo */
+  font-size: 50px;
+  /* Font weight set to bold */
+  font-weight: bolder;
+  /* Text color */
+  color: white;
+  /* Specifies the font family */
+  font-family: "Dancing Script", cursive;
+  /* Smooth transition effect for all properties */
+  transition: all 0.2s linear;
+}
+
+/* Navigation menu */
+.header .menubar a {
+  /* Specifies the font family for menu items */
+  font-family: "Dancing Script", cursive;
+  /* Text color for menu items */
+  color: white;
+  /* Font weight set to bold */
+  font-weight: bolder;
+  /* Display as inline block */
+  display: inline-block;
+  /* Padding for menu items */
+  padding: 1.2rem;
+  /* Font size for menu items */
+  font-size: 35px;
+  /* Smooth transition effect for all properties */
+  transition: all 0.2s linear;
+}
+
+/* Hover effect for menu items */
+.header .menubar a:hover {
+  /* Text color on hover */
+  color: #f40468;
+  /* Font weight on hover */
+  font-weight: bold;
+}
+
+/* Specific margins between menu items */
+.header .menubar a:nth-child(1) {
+  margin-right: 2rem; /* Space after "About" */
+}
+.header .menubar a:nth-child(2) {
+  margin-right: 2rem; /* Space after "Artwork" */
+}
+.header .menubar a:nth-child(3) {
+  margin-right: 2rem; /* Space after "Photography" */
+}
+.header .menubar a:nth-child(4) {
+  margin-right: 2rem; /* Space after "Web Development" */
+}
+
+/* Image styling */
+.section img {
+  /* Set width and height for images */
+  width: 800px;
+  height: 1000px;
+  /* Adjust margins for positioning */
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+/* Image specific styles */
+.section .img1 {
+  /* Set width and height */
+  width: 700px;
+  height: 1000px;
+  /* Adjust spacing between images */
+  margin-bottom: -90px;
+  margin-left: -550px;
+  /* Add a border to img1 */
+  border: 15px solid white;
+}
+
+/* Header 1 styling */
+.section h1 {
+  /* Positioning */
+  position: absolute;
+  top: 350px;
+  left: 900px;
+  /* Font size and family */
+  font-size: 90px;
+  font-family: "Dancing Script", cursive;
+  /* Text and background color */
+  color: black;
+  background-color: white;
+  /* Padding and display */
+  padding: 10px;
+  display: inline-block;
+  /* Border */
+  border: 15px solid white;
+}
+
+/* Header 11 styling */
+.section .h11 {
+  /* Positioning */
+  position: absolute;
+  top: 550px;
+  left: 900px;
+  /* Font size and family */
+  font-size: 90px;
+  font-family: "Dancing Script", cursive;
+  /* Text and background color */
+  color: black;
+  background-color: white;
+  /* Padding and display */
+  padding: 10px;
+  display: inline-block;
+  /* Border */
+  border: 15px solid white;
+}
+
+/* Paragraph styling */
+.section p {
+  /* Positioning */
+  position: absolute;
+  top: 770px;
+  left: 1000px;
+  /* Font weight, size, and family */
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Zilla Slab", serif;
+  /* Text color and padding */
+  color: black;
+  padding: 10px;
+  /* Display */
+  display: inline-block;
+}
+
+/* Image 2 styling */
+.section .img2 {
+  /* Set width and height */
+  width: 400px;
+  height: 300px;
+  /* Adjust spacing between images */
+  margin-bottom: -120px;
+  margin-left: 1500px;
+}
+
+/* Header 2 styling */
+.section2 h2 {
+  /* Margin and font family */
+  margin-top: -90px;
+  margin-left: 250px;
+  font-family: "Dancing Script", cursive;
+  /* Text color, padding, and font size */
+  color: white;
+  padding-top: 250px;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+/* Paragraph 2 styling */
+.section2 p {
+  /* Margin, font family, font weight, font size, and padding */
+  margin-top: 50px;
+  margin-left: 250px;
+  font-family: "Zilla Slab", serif;
+  font-weight: lighter;
+  font-size: 30px;
+  padding-bottom: 200px;
+}
+/* Image 4 styling */
+.section2 .img4 {
+  /* Positioning */
+  position: absolute;
+  z-index: 1; /* Places the image behind the paragraph */
+  top: 0;
+  left: 0;
+  /* Margin */
+  margin-top: 1500px;
+  margin-left: 1100px;
+  /* Border and border radius */
+  border: 15px solid white;
+  border-radius: 5px;
+  /* Dimensions */
+  width: 600px;
+  height: 800px;
+}
+
+/* Image 3 styling */
+.section2 .img3 {
+  /* Dimensions */
+  width: 800px;
+  height: 600px;
+  /* Margin */
+  margin-top: -340px;
+  margin-left: 15px;
+  /* Positioning */
+  position: absolute;
+  /* Z-index to send the image behind the paragraph */
+  z-index: 1;
+}
+
+/* Header 1 styling */
+.section3 h1 {
+  /* Font size, font family, text alignment, and color */
+  font-size: 80px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  color: white;
+}
+
+/* Header 2 styling */
+.section3 h2 {
+  /* Background color, margin, font size, display mode, padding, and letter spacing */
+  margin-left: 50px;
+  font-size: 30px;
+  font-family: "Zilla Slab", serif;
+  font-weight: lighter;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+  letter-spacing: 5px;
+}
+
+
+/* Image 2 styling */
+.section3 .img2 {
+  /* Dimensions */
+  width: 200px;
+  height: 200px;
+  /* Margin and position */
+  margin-top: 180px;
+  position: absolute;
+  left: 800px;
+  /* Z-index to send the image behind */
+  z-index: -1;
+}
+
+/* Header 222 styling */
+.section3 .h222 {
+  /* Background color, margin, margin-bottom, font size, display mode, and letter spacing */
+  margin-left: 900px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Zilla Slab", serif;
+  font-weight: lighter;
+  font-size: 30px;
+  display: inline-block;
+  letter-spacing: 5px;
+}
+
+/* Image 3 styling */
+.section3 .img3 {
+  /* Dimensions */
+  width: 200px;
+  height: 200px;
+  /* Margin and position */
+  margin-top: 220px;
+  position: absolute;
+  left: 1000px;
+  /* Z-index to send the image behind */
+  z-index: -1;
+}
+
+/* Header 3 styling */
+.section4 h3 {
+  /* Background color, font family, font size, text alignment, padding, and color */
+  background-color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  text-align: center;
+  padding: 100px;
+  color: #ffbc42;
+}
+
+ /* Skills Section */
+.skills {
+  /* Dimensions */
+  width: 600px;
+  min-width: 1930px;
+  max-width: 100%;
+  /* Text color */
+  color: #fff;
+  /* Flex container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skills Header */
+.skills-header {
+  /* Font family, size, width, alignment, padding, and margin */
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Skills Container */
+.skills-container {
+  /* Dimensions */
+  max-width: 100%;
+  width: 100%;
+  /* Flex container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Background and filter */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  /* Border radius and padding */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Individual Skill Container */
+.skill-container {
+  /* Dimensions */
+  width: 100%;
+  /* Margin and padding */
+  margin: 10px 0;
+  padding: 10px 0;
+  /* Positioning */
+  position: relative;
+}
+
+/* Skill Text */
+.skill-container p {
+  /* Margin */
+  margin: 5px;
+  /* Font family and size */
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+}
+
+/* Skill Progress Bar */
+.bar {
+  /* Dimensions */
+  width: 100%;
+  /* Background color, display mode, and border */
+  background: black;
+  display: block;
+  height: 20px;
+  border: none;
+  /* Border radius and overflow */
+  border-radius: 100vw;
+  overflow: hidden;
+  /* Transition effect */
+  transition: all .3s cubic-bezier(.25, 8, .25, 1);
+}
+
+/* Skill Progress */
+.bar span {
+  /* Height and floating */
+  height: 20px;
+  float: left;
+  /* Background color and border */
+  background: purple;
+  border: none;
+  border-radius: 100vw;
+}
+
+/* Animation for skill bars */
+/* HTML/CSS Animation */
+.html.animate,
+.css.animate {
+  width: 90%;
+  animation: html_css 3s;
+}
+
+/* JavaScript Animation */
+.javascript.animate {
+  width: 30%;
+  animation: javascript 3s;
+}
+
+/* React Animation */
+.react.animate {
+  width: 70%;
+  animation: react 3s;
+}
+
+/* Node Animation */
+.node.animate {
+  width: 50%;
+  animation: node 3s;
+}
+
+/* Keyframes for skill animations */
+@keyframes html_css {
+  0% {
+    width: 0%
+  }
+  100% {
+    width: 90%
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%
+  }
+  100% {
+    width: 80%
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%
+  }
+  100% {
+    width: 70%
+  }
+}
+
+@keyframes node {
+  0% {
+    width: 0%
+  }
+  100% {
+    width: 50%
+  }
+}
+
+/* Percentage Indicator */
+.percentage {
+  /* Content, position, dimensions */
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 25px;
+  height: 20px;
+  /* Background color and alignment */
+  background: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Font size and border radius */
+  font-size: 24px;
+  border-radius: 2px;
+  /* Z-index and transition effect */
+  z-index: 10;
+  transition: all .3s ease-in-out;
+}
+
+/* Triangle Indicator */
+.percentage::after {
+  /* Content, position, dimensions */
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  /* Background color */
+  background: purple;
+  /* Z-index */
+  z-index: -1;
+}
+
+/* Animation for percentage indicators */
+/* HTML/CSS Percentage Animation */
+.html-percentage.animate,
+.css-percentage.animate {
+  left: 90%;
+  animation: html_css_percentage 3s;
+}
+
+/* JavaScript Percentage Animation */
+.javascript-percentage.animate {
+  left: 80%;
+  animation: javascript_percentage 3s;
+}
+
+/* React Percentage Animation */
+.react-percentage.animate {
+  left: 70%;
+  animation: react_percentage 3s;
+}
+
+/* Node Percentage Animation */
+.node-percentage.animate {
+  left: 70%;
+  animation: node_percentage 3s;
+}
+
+/* Keyframes for percentage animations */
+@keyframes html_css_percentage {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 90%;
+  }
+}
+
+@keyframes javascript_percentage {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 80%;
+  }
+}
+
+@keyframes react_percentage {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 70%;
+  }
+}
+
+@keyframes node_percentage {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+/* Additional Styling */
+/* ID Selector */
+#gfg {
+  /* Text color */
+  color: #ff4d6d;
+  /* Background color */
+  background-color: white;
+  /* Top margin */
+  margin-top: 120px;
+  /* Font size */
+  font-size: 50px;
+  /* Width */
+  width: 100%;
+  /* Font family */
+  font-family: "Dancing Script", cursive;
+}
+
+/* Footer Styling */
+.footer {
+  /* Padding */
+  padding: 30px 0px;
+  /* Text alignment */
+  text-align: center;
+  /* Top margin */
+  margin-top: 40px;
+}
+
+/* Footer Row Styling */
+.footer .row {
+  /* Width */
+  width: 100%;
+  /* Padding */
+  padding: 0.6% 0%;
+  /* Text color */
+  color: black;
+  /* Font family */
+  font-family: Alex Brush;
+  /* Font size */
+  font-size: 1.5em;
+}
+
+/* Footer Anchor Styling */
+.footer .row a {
+  /* Text decoration */
+  text-decoration: none;
+  /* Text color */
+  color: black;
+  /* Transition effect */
+  transition: 0.5s;
+}
+
+/* Footer Anchor Hover Styling */
+.footer .row a:hover {
+  /* Text color on hover */
+  color: #fff;
+}
+
+/* Footer Row UL Styling */
+.footer .row ul {
+  /* Width */
+  width: 100%;
+}
+
+/* Footer Row UL List Styling */
+.footer .row ul li {
+  /* Display as inline-block */
+  display: inline-block;
+}
+
+/* Footer Anchor Icon Styling */
+.footer .row a i {
+  /* Font size */
+  font-size: 2em;
+  /* Margin */
+  margin: 0% 1%;
+}
+
+/* Media Query for Footer */
+@media (max-width: 220px) {
+  /* Footer alignment */
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  /* Footer UL List alignment */
+  .footer .row ul li {
+    display: block;
+    text-align: left;
+  }
+}

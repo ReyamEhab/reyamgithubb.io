@@ -1,0 +1,380 @@
+/* Background styling for the page */
+body {
+  /* A colorful gradient background */
+  background: linear-gradient(-45deg,#ffafcc 3%, pink 38%, #ea1466 68%, purple 98%);
+  /* Make the background repeat smoothly */
+  background-size: 400% 400%;
+  /* Animate the background gradient over 15 seconds with infinite looping */
+  animation: gradient 15s ease infinite;
+}
+
+/* Keyframes animation for the background gradient */
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%; /* Start position of the gradient */
+  }
+  50% {
+      background-position: 100% 50%; /* Middle position of the gradient */
+  }
+  100% {
+      background-position: 0% 50%; /* End position of the gradient */
+  }
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+
+/* HEADER (Logo/Navbar) */
+.header {
+  /* Navigation Menu Bar */
+  transition: all 0.2s linear; /* Smooth transition for all properties */
+  z-index: 1000; /* Ensure the header is on top */
+  font-size: 35px; /* Font size for the header */
+}
+.header .main-header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Space between logo and navbar */
+  padding: 1.5rem 8%; /* Padding around the header */
+  transition: all 0.2s linear; /* Smooth transition for all properties */
+}
+.header .main-header .logo {
+  font-size: 70px; /* Font size for the logo */
+  color: white; /* Logo color */
+  padding: 25px; /* Padding around the logo */
+  margin-top: -50px; /* Negative top margin to adjust position */
+  margin-left: -170px; /* Negative left margin to adjust position */
+  font-family: "Dancing Script", cursive; /* Font family for the logo */
+  padding-bottom: 40px; /* Padding at the bottom */
+  border-style: initial 30px; /* Initial border style (incorrect syntax, no effect) */
+  font-weight: bolder; /* Bold font weight */
+  transition: all 0.2s linear; /* Smooth transition for all properties */
+}
+.header .menubar a {
+  font-family: "Dancing Script", cursive; /* Font family for menu items */
+  color: white; /* Color of menu items */
+  margin-top: -50px; /* Negative top margin to adjust position */
+  display: inline-block; /* Display as inline block */
+  padding: 1.2rem; /* Padding around menu items */
+  font-size: 35px; /* Font size for menu items */
+  transition: all 0.2s linear; /* Smooth transition for all properties */
+  letter-spacing: 0.1em; /* Add space between the letters */
+}
+.header .menubar a:hover {
+  color: #ff4d6d; /* Change color on hover */
+  font-weight: bold; /* Bold font weight on hover */
+}
+
+/* Blurring effect for card list */
+.card-list:has(li:hover) li:not(:hover) {
+  filter: blur(4px); /* Blur non-hovered items */
+}
+
+ 
+
+/* Styling for h2 elements */
+h2 {
+  font-size: 2.4rem; /* Font size */
+  margin: 0; /* No margin */
+  font-family: 'Dancing Script', cursive; /* Font family */
+}
+
+/* Styling for card list container */
+.card-list {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  gap: 1rem; /* Gap between grid items */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+}
+
+/* Styling for list items */
+li {
+  margin: 0; /* No margin */
+  transition: all 150ms ease-in-out; /* Smooth transition for all properties */
+}
+
+/* Empty content before list items */
+li::before {
+  content: "";
+}
+
+/* Styling for images */
+img {
+  display: block; /* Display as block */
+  min-width: 0; /* Minimum width */
+  width: 100%; /* Full width */
+  margin-bottom: .6rem; /* Bottom margin */
+}
+/* Marquee styles */
+#gfg {
+  color: #ff4d6d;
+  background-color: white;
+  margin-top: 200px;
+  font-size: 50px;
+  width: 100%;
+  font-family: "Dancing Script", cursive;
+}
+
+/* Padding for paper class */
+.paper {
+  padding: 1.5rem; /* Padding around the element */
+}
+
+/* Padding for links inside list items */
+li a {
+  padding-inline-start: 1rem; /* Start padding inline */
+}
+
+/* Placeholder styling */
+.placeholder {
+  display: inline-block; /* Display as inline block */
+  width: 800px; /* Width of the placeholder */
+  height: 00px; /* Height of the placeholder (incorrect syntax, no effect) */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-top: 40px; /* Top margin */
+  position: relative; /* Relative positioning */
+}
+
+/* Common styling for column, blind, and blindImg classes */
+.column, .blind, .blindImg {
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Top position */
+  height: 100%; /* Full height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+ 
+
+/* Styling for h3 elements */
+h3 {
+  font-size: 150px; /* Large font size */
+  text-transform: uppercase; /* Uppercase text */
+  font-family: 'Gambetta', serif; /* Font family */
+  letter-spacing: -3px; /* Negative letter spacing */
+  transition: 700ms ease; /* Smooth transition */
+  font-variation-settings: "wght" 311; /* Font weight variation */
+  margin-top: 170px; /* Top margin */
+  color: #ff4d6d; /* Text color */
+  outline: none; /* No outline */
+  text-align: center; /* Center text */
+}
+
+/* Hover effect for h3 elements */
+h3:hover {
+  font-variation-settings: "wght" 582; /* Change font weight */
+  letter-spacing: 1px; /* Change letter spacing */
+}
+
+/* Styling for div1 class */
+.div1 {
+  border: #ff4d6d 7px solid; /* Border color and width */
+  width: 800px; /* Width */
+  height: 1000px; /* Height */
+  position: relative; /* Relative positioning */
+  top: 60px; /* Top position */
+  left: 60px; /* Left position */
+}
+
+/* Style the bounce1 class */
+.bounce1 {
+  width: 100%; /* Set width to 100% */
+  margin-top: 300px; /* Set top margin */
+  display: inline-flex; /* Use inline-flex layout */
+  justify-content: center; /* Center content */
+  -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e); /* Create reflection */
+}
+
+/* Style span elements within the bounce1 class */
+.bounce1 span {
+  display: inline-block; /* Display as inline block */
+  font-size: 200px; /* Set font size */
+  animation: bounce 1s infinite; /* Apply bounce animation */
+}
+
+/* Define individual glow animations for each span element within the bounce1 class */
+.bounce1 span:nth-child(0) {
+  animation: glow 1s alternate infinite 0.0s; /* Delay each letter */
+}
+.bounce1 span:nth-child(1) {
+  animation: glow 1s alternate infinite 0.5s; /* Delay each letter */
+}
+.bounce1 span:nth-child(2) {
+  animation: glow 1s alternate infinite 0.10s; /* Delay each letter */
+}
+.bounce1 span:nth-child(3) {
+  animation: glow 1s alternate infinite 0.15s; /* Delay each letter */
+}
+.bounce1 span:nth-child(4) {
+  animation: glow 1s alternate infinite 0.20s; /* Delay each letter */
+}
+.bounce1 span:nth-child(5) {
+  animation: glow 1s alternate infinite 0.25s; /* Delay each letter */
+}
+.bounce1 span:nth-child(6) {
+  animation: glow 1s alternate infinite 0.30s; /* Delay each letter */
+}
+.bounce1 span:nth-child(7) {
+  animation: glow 1s alternate infinite 0.35s; /* Delay each letter */
+}
+.bounce1 span:nth-child(8) {
+  animation: glow 1s alternate infinite 0.35s; /* Delay each letter */
+}
+.bounce1 span:nth-child(9) {
+  animation: glow 1s alternate infinite 0.35s; /* Delay each letter */
+}
+
+/* Define keyframes for bounce1 animation */
+@keyframes bounce1 {
+  0%, 100% {
+      transform: translateY(0); /* Start and end at original position */
+  }
+  50% {
+      transform: translateY(-20px); /* Move up */
+  }
+}
+
+/* Define keyframes for glow animation */
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 0px black; /* No shadow at start */
+  }
+  100% {
+      text-shadow: 0 0 5px black, 0 0 30px black, 0 0 40px black; /* Apply glowing shadow */
+  }
+}
+
+/* Style h1 elements */
+h1 {
+  font-size: 70px; /* Set font size */
+  margin-left: 700px; /* Set left margin */
+}
+
+/* Styling for image1 class inside section1 class */
+.section1 .image1 {
+  width: 800px; /* Width */
+  height: 1000px; /* Height */
+  margin-top: -1000px; /* Negative top margin */
+}
+
+/* Styling for h2 elements inside section1 class */
+.section1 h2 {
+  font-size: 90px; /* Font size */
+  background-color: white; /* Background color */
+  display: inline-block; /* Display as inline block */
+  margin-top: -700px; /* Negative top margin */
+  margin-left: 1100px; /* Left margin */
+  font-family: "Zilla Slab", serif; /* Font family */
+  color: #ff4d6d; /* Text color */
+}
+
+/* Styling for p1 class inside section1 class */
+.section1 .p1 {
+  font-size: 25px; /* Font size */
+  margin-top: 10px; /* Top margin */
+  margin-left: 1100px; /* Left margin */
+  font-family: "Zilla Slab", serif; /* Font family */
+  color: #ff4d6d; /* Text color */
+}
+
+/* Styling for img elements inside section class */
+.section img {
+  width: 800px; /* Width */
+  height: 1000px; /* Height */
+  margin-top: 30px; /* Top margin */
+  margin-left: 50px; /* Left margin */
+}
+
+/* Styling for img1 class inside section class */
+.section .img1 {
+  width: 700px; /* Width */
+  height: 1000px; /* Height */
+  margin-top: -950px; /* Negative top margin */
+  position: relative; /* Relative positioning */
+  margin-left: 200px; /* Left margin */
+  border: 15px solid white; /* Add a border to img1 */
+}
+
+/* Styling for h4 elements inside section class */
+.section h4 {
+  margin-top: -800px; /* Negative top margin */
+  font-size: 80px; /* Font size */
+  margin-left: 750px; /* Left margin */
+  position: relative; /* Relative positioning */
+  font-family: "Dancing Script", cursive; /* Font family */
+  color: #ff4d6d; /* Text color */
+  background-color: white; /* Background color */
+  padding: 15px; /* Padding around the element */
+}
+
+/* Styling for p elements inside section class */
+.section p {
+  margin-top: 20px; /* Top margin */
+  font-size: 40px; /* Font size */
+  display: inline-flex; /* Display as inline flex */
+  margin-left: 750px; /* Left margin */
+  position: relative; /* Relative positioning */
+  font-family: "Dancing Script", cursive; /* Font family */
+  color: #ff4d6d; /* Text color */
+  background-color: white; /* Background color */
+  padding: 35px; /* Padding around the element */
+}
+
+/* Footer Styling */
+.footer {
+  padding: 30px 0px; /* Padding */
+  text-align: center; /* Text alignment */
+  margin-top: 280px; /* Top margin */
+}
+
+/* Footer Row Styling */
+.footer .row {
+  width: 100%; /* Full width */
+  padding: 0.6% 0%; /* Padding */
+  color: black; /* Text color */
+  font-family: Alex Brush; /* Font family */
+  font-size: 1.5em; /* Font size */
+}
+
+/* Footer Anchor Styling */
+.footer .row a {
+  text-decoration: none; /* No text decoration */
+  color: black; /* Text color */
+  transition: 0.5s; /* Smooth transition */
+}
+
+/* Footer Anchor Hover Styling */
+.footer .row a:hover {
+  color: #ff4d6d; /* Text color on hover */
+}
+
+/* Footer Row UL Styling */
+.footer .row ul {
+  width: 100%; /* Full width */
+}
+
+/* Footer Row UL List Styling */
+.footer .row ul li {
+  display: inline-block; /* Display as inline block */
+}
+
+/* Footer Anchor Icon Styling */
+.footer .row a i {
+  font-size: 2em; /* Font size */
+  margin: 0% 1%; /* Margin */
+}
+
+/* Media Query for Footer */
+@media (max-width: 220px) {
+  /* Footer alignment */
+  .footer {
+      text-align: left; /* Left text alignment */
+      padding: 5%; /* Padding */
+  }
+  /* Footer UL List alignment */
+  .footer .row ul li {
+      display: block; /* Display as block */
+      text-align: left; /* Left text alignment */
+  }
+}
